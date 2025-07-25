@@ -1,0 +1,14 @@
+----
+apiVersion: v1
+kind: pod
+metadata:
+  -name: second
+spec:
+  containers:
+  -name: firest
+   image:nginx
+  -name: second
+   image: alpine 
+   command:
+     -sleep
+     -1d
